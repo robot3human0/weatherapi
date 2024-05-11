@@ -13,8 +13,7 @@
 - <b>openssl</b>
 - <b>crypto</b>
 
-## Сборка
-Сборка на примере <b>example.cc</b> <br>
+## Пример сборки на примере <b>example.cc</b> <br>
 `g++ -std=c++11 example.cc -o example_client -lssl -lcrypto`
 
 # Weatherapi_client (project in development)
@@ -32,8 +31,7 @@ For http requests I used a simple library [<b><i>httplib.h</i></b>](https://gith
 - <b>openssl</b>
 - <b>crypto</b>
 
-## Assembly
-To compile using <b>example.cc</b> as an example<br>
+## Compile example using <b>example.cc</b><br>
 `g++ -std=c++11 example.cc -o example_client -lssl -lcrypto`
 
 
