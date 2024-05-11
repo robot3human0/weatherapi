@@ -49,7 +49,7 @@ req.xml = true;                          // false by default and answer will be 
 req.lang = "ru";                         // Language
 req.q = "Ташкент";                       // all parameters you can find on the weatherapi.com
 req.aqi = 1;                             // or in comments in the code.
-req.hour = 1;                            //
+req.hour = 17;                           //
 req.dt = "2024-01-24";                   //
 req.end_dt = "2024-02-03";               //
 
