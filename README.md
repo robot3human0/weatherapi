@@ -14,7 +14,7 @@
 - <b>crypto</b>
 
 ## Пример сборки на примере <b>example.cc</b> <br>
-`g++ -std=c++11 example.cc -o example_client -lssl -lcrypto`
+`g++ -Wall -Werror -Wextra -std=c++11 example.cc -o example_client -lssl -lcrypto`
 
 # Weatherapi_client (project in development)
 
@@ -32,7 +32,7 @@ For http requests I used a simple library [<b><i>httplib.h</i></b>](https://gith
 - <b>crypto</b>
 
 ## Compile example using <b>example.cc</b><br>
-`g++ -std=c++11 example.cc -o example_client -lssl -lcrypto`
+`g++ -Wall -Werror -Wextra -std=c++11 example.cc -o example_client -lssl -lcrypto`
 
 
 # Code example

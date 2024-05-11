@@ -232,16 +232,15 @@ struct Weather_Request_T {
 
   std::string CheckDays(bool marine) {
     if (marine) {
-      if (days < 0) { days = 0; }
       if (days > 7) { days = 7; }
       return "&days=" + std::to_string(days);
     }
-    if (14 > days > 0) { return "&days=" + std::to_string(days); }
+    if (14 > days && days > 0) { return "&days=" + std::to_string(days); }
     return "";
   }
 
   std::string CheckHour() {
-    if (24 > hour > 0) { return "&hour=" + std::to_string(hour); }
+    if (24 > hour && hour > 0) { return "&hour=" + std::to_string(hour); }
     return "";
   }
 }; // struct Weather_Request_T
@@ -259,7 +258,9 @@ public:
 
   WeatherApiClient(WeatherApiClient &&o) = delete;
 
-  ~WeatherApiClient() {}
+  ~WeatherApiClient() {
+
+  }
 
   WeatherApiClient &operator=(const WeatherApiClient &o) = delete;
   WeatherApiClient &operator=(WeatherApiClient &&o) = delete;
